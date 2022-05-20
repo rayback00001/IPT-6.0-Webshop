@@ -1,1 +1,1 @@
-# IPT-6.0-Webshop
+# Webshop
