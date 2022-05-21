@@ -9,5 +9,35 @@ nav .navigation-list{
 }
 
 nav .navigation-list li{
-    
+    display: inline-block;
+}
+
+nav .navigation-list li a{
+    display: inline-block;
+    color: #eee;
+    margin-right: 52px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+nav .navigation-list li a:hover{
+    color: #2ecc71;
+    transition: .5s;
+}
+
+nav .navigation-list li.btn a{
+    display: inline-block;
+    border: 2px solid #2ecc71;
+    padding: 9px 28px;
+    border-radius: 25px;
+    font-weight: 450;
+    color: #2ecc71;
+ 
+   
+}
+
+nav .navigation-list li.btn:hover a{
+    color: white;
+    background-color: #2ecc71;
+    transition: .5s;
 }
