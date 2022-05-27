@@ -211,3 +211,73 @@ ul {
 .footer-col ul li a:hover {
     padding-left: 2px;
 }
+
+
+/*Shopping Cart*/
+
+.shopping-cart-container{
+    margin: 90px ;
+}
+
+table{
+    width: 100%;
+}
+
+.shopping-cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background-color: red;
+}
+
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 50px;
+    height: 25px;
+    padding: 2px;
+}
+
+td a{
+    color: #ff523b;
+}
+
+.shopping-cart-container h6{
+    font-size: 12px;
+    text-align: start;
+}
+
+.remove-btn{
+    padding-top: 6px;
+}
+
+.remove-btn a{
+    display: block;
+    border: 3px solid red;
+    padding: 4px 6px;
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+    text-align: center;
+}
+
+
+
+.remove-btn a:hover{
+    color: white;
+    background-color: red;
+    transition: .3s;
+}
+
+td img{
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+}
