@@ -5,15 +5,24 @@ const productselement = document.querySelector(".products");
 function renderProducts(){
     products.forEach((product) => {
         productselement.innerHTML += `    
-            <img src = " ${product.imgsrc}">
-            <h2>${product.name}</h2>
-            <h2><small></small>${product.price}</h2>
-            <p>
-                ${product.description}
-            </p>
+            
+            <div class="card">
+                <div class="card-img">
+                    <img src="${product.imgsrc}">
+                </div>
+                <div class="description">
+                  <h1>${product.name}</h1>
+                  <p><b>Preis:</b><span>${product.price}</span></p>
+                </div>
+                <div class="button-show">
+                  <a href="" class="i-d-w">In den Warenkorb</a>
+                </div>
+            </div>
 
 
         `
     });
 }
 renderProducts();
+
+

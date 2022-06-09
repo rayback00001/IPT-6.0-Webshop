@@ -280,3 +280,70 @@ td img{
     height: 90px;
     margin-right: 10px;
 }
+
+
+/*Produkte*/
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 2px 4px;
+    width: 325px;
+    height: 360px;
+    text-align: center;
+    margin: 25px;
+    background-color: #fff;
+}
+
+
+.card-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img img {
+    width: 100%;
+    height: auto;
+}
+
+.description {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.description h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #222;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.description p {
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+}
+
+.beschreibung span {
+    margin-left: 6px;
+}
+
+.button-show {
+    margin-top: 15px;
+}
+
+.button-show .i-d-w {
+    background-color: #1986d2;
+    font-size: 14px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
