@@ -30,7 +30,7 @@ const products = [
     name: "Iphone 13 Silikon Case RED",
     price: 45.00,
     description: "test",
-    imgSrc: "./img/case RED.jpg",
+    imgsrc: "./img/case RED.jpg",
 },
 
 {
@@ -38,7 +38,7 @@ const products = [
     name: "Iphone 13 Silikon Case Schwarz",
     price: 40.00,
     description: "test",
-    imgSrc: "./img/case schwarz.jpg",
+    imgsrc: "./img/case schwarz.jpg",
 },
 
 {
@@ -46,7 +46,7 @@ const products = [
     name: "Iphone 13 Silikon Case Wolkenblau",
     price: 32.00,
     description: "test",
-    imgSrc: "./img/case wolkenblau.jpg",
+    imgsrc: "./img/case wolkenblau.jpg",
 },
 
 ];
