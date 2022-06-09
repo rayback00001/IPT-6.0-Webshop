@@ -26,9 +26,13 @@ function renderProducts(){
 renderProducts();
 
 
+const shoppingcart = [];
+
 // In Warenkorb einfügen
 function addToCart(id){
-    console.log(id);
+
+    const article = products.find((product) => product.id === id);
+    console.log(article);
 }
 
 
