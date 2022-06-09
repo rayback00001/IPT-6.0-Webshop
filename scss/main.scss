@@ -315,23 +315,27 @@ td img{
     margin-top: 20px;
 }
 
-.description h1 {
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #222;
-    letter-spacing: 2px;
-    margin-top: 10px;
-}
+.description {
+   
+    h1{
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #222;
+        letter-spacing: 2px;
+        margin-top: 10px;
+    }
 
-.description p {
+    p{
     font-size: 17px;
     letter-spacing: 1.5px;
     margin-top: 10px;
+    }
+
+    span{
+        margin-left: 6px;  
+    }
 }
 
-.beschreibung span {
-    margin-left: 6px;
-}
 
 .button-show {
     margin-top: 15px;
