@@ -7,7 +7,6 @@ const products = [
 
 },
 
-
 {
     id:1,
     name: "Iphone 13 Silikon Case Dunstblau",

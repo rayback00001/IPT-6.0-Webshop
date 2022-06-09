@@ -1,5 +1,5 @@
-// Elemente select
 
+//Elemente auswählen
 const productselement = document.querySelector(".products");
 
 function renderProducts(){
@@ -14,7 +14,7 @@ function renderProducts(){
                   <h1>${product.name}</h1>
                   <p><b>Preis:</b><span>${product.price}</span></p>
                 </div>
-                <div class="button-show">
+                <div class="button-show" onclick="addToCart(${product.id})">
                   <a href="" class="i-d-w">In den Warenkorb</a>
                 </div>
             </div>
@@ -24,5 +24,11 @@ function renderProducts(){
     });
 }
 renderProducts();
+
+
+// In Warenkorb einfügen
+function addToCart(id){
+    console.log(id);
+}
 
 
