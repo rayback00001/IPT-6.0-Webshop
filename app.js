@@ -7,7 +7,6 @@ function renderProducts(){
     products.forEach((product) => {
         productselement.innerHTML += `    
         
-        
         <div class = "card-container">
          <div class="card">
          <div class="card-img">
@@ -32,6 +31,7 @@ renderProducts();
 
 
 const shoppingcart = [];
+
 
 // In Warenkorb einfügen
 function addToCart(id){
@@ -66,4 +66,7 @@ function renderCart(){
         `;
     });
 }
+
+
+
 
