@@ -288,6 +288,15 @@ td img{
 
 /*Produkte*/
 
+.products{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
 .card {
     display: flex;
     justify-content: center;
