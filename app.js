@@ -17,7 +17,7 @@ function renderProducts(){
           <p><b>Preis:</b><span>${product.price}</span></p>
          </div>
           <div class="button-show" onclick="addToCart(${product.id})">
-          <a href="" class="i-d-w">In den Warenkorb</a>
+          <a href="#" class="i-d-w">In den Warenkorb</a>
         </div>
         </div>
 
@@ -61,8 +61,6 @@ function renderCart(){
                             <h6>Preis: ${article.price}</h6>
                             <div class="remove-btn"><a href="">Löschen</a></div>
                         </div>
-                        </div>
-        
         `;
     });
 }
