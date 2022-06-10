@@ -1,7 +1,7 @@
 
 //Elemente auswählen
 const productselement = document.querySelector(".products");
-const cartelement = document.querySelector(".shopping-cart-info");
+const cartelement = document.querySelector(".cartobject");
 
 function renderProducts(){
     products.forEach((product) => {
@@ -21,7 +21,6 @@ function renderProducts(){
         </div>
         </div>
 
-     </div>
             
 
         `;
@@ -55,12 +54,10 @@ function renderCart(){
     shoppingcart.forEach((article) => {
         cartelement.innerHTML += `
 
-                        <img src="${article.imgsrc}">
-                        <div>
-                            <p>${article.name}</p>
-                            <h6>Preis: ${article.price}</h6>
-                            <div class="remove-btn"><a href="">Löschen</a></div>
-                        </div>
+        <td><img src = "${article.imgsrc}"></td>
+        <td>${article.name}</td>
+        <td>${article.price}</td>
+        <td><input type="number" value="1"></td>
         `;
     });
 }
