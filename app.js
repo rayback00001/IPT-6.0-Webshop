@@ -1,6 +1,7 @@
 
 //Elemente auswählen
 const productselement = document.querySelector(".products");
+const cartelement = document.querySelector(".shopping-cart-info");
 
 function renderProducts(){
     products.forEach((product) => {
@@ -24,7 +25,7 @@ function renderProducts(){
      </div>
             
 
-        `
+        `;
     });
 }
 renderProducts();
@@ -45,7 +46,24 @@ function addToCart(id){
         shoppingcart.push(article);
         console.log(article);
     }
-    
 }
 
+
+function renderCart(){
+
+    cartelement.innerHTML = "";
+    shoppingcart.forEach((article) => {
+        cartelement.innerHTML += `
+
+                        <img src="${article.imgsrc}">
+                        <div>
+                            <p>${article.name}</p>
+                            <h6>Preis: ${article.price}</h6>
+                            <div class="remove-btn"><a href="">Löschen</a></div>
+                        </div>
+                        </div>
+        
+        `;
+    });
+}
 
