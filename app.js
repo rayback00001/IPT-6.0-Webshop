@@ -35,8 +35,17 @@ const shoppingcart = [];
 // In Warenkorb einfügen
 function addToCart(id){
 
-    const article = products.find((product) => product.id === id);
-    console.log(article);
+    //Überprüfen ob ein Produkt schon existiert
+    if(shoppingcart.some((article) => article.id === id)){
+        alert("Produkt ist schon im Warenkorb!")
+    }
+    else{
+        const article = products.find((product) => product.id === id);
+    
+        shoppingcart.push(article);
+        console.log(article);
+    }
+    
 }
 
 
