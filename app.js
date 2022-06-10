@@ -1,7 +1,7 @@
 
 //Elemente auswählen
 const productselement = document.querySelector(".products");
-const cartelement = document.querySelector(".cartobject");
+const cartelement = document.querySelector(".cart-item");
 
 function renderProducts(){
     products.forEach((product) => {
@@ -17,11 +17,9 @@ function renderProducts(){
           <p><b>Preis:</b><span>${product.price}</span></p>
          </div>
           <div class="button-show" onclick="addToCart(${product.id})">
-          <a href="#" class="i-d-w">In den Warenkorb</a>
+          <a href="#" class = "i-d-w">In den Warenkorb</a>
         </div>
         </div>
-
-            
 
         `;
     });
@@ -29,7 +27,7 @@ function renderProducts(){
 renderProducts();
 
 
-const shoppingcart = [];
+let shoppingcart = [];
 
 
 // In Warenkorb einfügen
@@ -42,25 +40,39 @@ function addToCart(id){
     else{
         const article = products.find((product) => product.id === id);
     
-        shoppingcart.push(article);
-        console.log(article);
+        shoppingcart.push({
+            ...article,
+            numberOfUnits:1,
+        });
+        console.log(shoppingcart);
     }
+
+    updateCart();
+}
+
+function updateCart(){
+    renderCart();
 }
 
 
 function renderCart(){
-
     cartelement.innerHTML = "";
     shoppingcart.forEach((article) => {
         cartelement.innerHTML += `
-
-        <td><img src = "${article.imgsrc}"></td>
-        <td>${article.name}</td>
-        <td>${article.price}</td>
-        <td><input type="number" value="1"></td>
+        
+            <tr>
+            <td><img src = "${article.imgsrc}"></td>
+            <td>${article.name}</td>
+            <td>${article.price}</td>
+            <td><input type = "number" value = "1"></td>
+            <td></td>
+            <td><a href="#"><i class="fa-solid fa-xmark"></i></a></td>
+            </tr>
+         
         `;
     });
 }
+
 
 
 

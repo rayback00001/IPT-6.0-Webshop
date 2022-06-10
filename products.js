@@ -1,7 +1,7 @@
 const products = [
 {
     id:0,
-    name: "Iphone 13 Silikon Case Kalkrosa",
+    name: "Silikon Case Kalkrosa",
     price: 55.00,
     imgsrc: "./img/case kalkrosa.jpg",
 
@@ -9,35 +9,35 @@ const products = [
 
 {
     id:1,
-    name: "Iphone 13 Silikon Case Dunstblau",
+    name: "Silikon Case Dunstblau",
     price: 45.00,
     imgsrc: "./img/case dunstblau.jpg",
 },
 
 {
     id:2,
-    name: "Iphone 13 Silikon Case Kumquat",
+    name: "Silikon Case Kumquat",
     price: 57.00,
     imgsrc: "./img/case kumquat.jpg",
 },
 
 {
     id:3,
-    name: "Iphone 13 Silikon Case RED",
+    name: "Silikon Case RED",
     price: 45.00,
     imgsrc: "./img/case RED.jpg",
 },
 
 {
     id:4,
-    name: "Iphone 13 Silikon Case Schwarz",
+    name: "Silikon Case Schwarz",
     price: 40.00,
     imgsrc: "./img/case schwarz.jpg",
 },
 
 {
     id:5,
-    name: "Iphone 13 Silikon Case Wolkenblau",
+    name: "Silikon Case Wolkenblau",
     price: 32.00,
     imgsrc: "./img/case wolkenblau.jpg",
 },
