@@ -64,11 +64,14 @@ function renderCart(){
             <td><img src = "${article.imgsrc}"></td>
             <td>${article.name}</td>
             <td>${article.price}</td>
-            <td><input type = "number" value = "1"></td>
+            <td><div class ="units">
+            <div class = "btn-minus">-</div>
+            <div class = "number"></div>
+            <div class = "btn-plus">+</div>
+            </div></td>
             <td></td>
             <td><a href="#"><i class="fa-solid fa-xmark"></i></a></td>
-            </tr>
-         
+            </tr>    
         `;
     });
 }

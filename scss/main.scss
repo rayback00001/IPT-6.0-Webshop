@@ -334,11 +334,6 @@ ul {
 }
 
 
-.cart-section table td:nth-child(4) input{
-    width: 70px;
-    padding: 10px 5px 10px 15px;
-}
-
 .cart-section thead{
     border:1px solid green;
     border-left: none;
@@ -355,4 +350,20 @@ ul {
 
 .cart-section tbody tr td{
     padding-top: 20px;
+}
+
+
+.units{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-minus,
+.btn-plus{
+    border: 2px solid #2ecc71;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: yellow;
+    
 }
