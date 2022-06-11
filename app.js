@@ -1,10 +1,10 @@
 //Elemente auswählen
-const productselement = document.querySelector(".products");
+const productelement = document.querySelector(".products");
 const cartelement = document.querySelector(".cart-item");
 
 function renderProducts(){
     products.forEach((product) => {
-        productselement.innerHTML += `    
+        productelement.innerHTML += `    
         
         <div class = "card-container">
          <div class="card">
