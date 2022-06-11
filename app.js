@@ -1,4 +1,3 @@
-
 //Elemente auswählen
 const productselement = document.querySelector(".products");
 const cartelement = document.querySelector(".cart-item");
@@ -17,7 +16,7 @@ function renderProducts(){
           <p><b>Preis:</b><span>${product.price}</span></p>
          </div>
           <div class="button-show" onclick="addToCart(${product.id})">
-          <div class = "i-d-w">In den Warenkorb</a>
+          <div class="i-d-w">In den Warenkorb</a>
         </div>
         </div>
 
@@ -27,7 +26,8 @@ function renderProducts(){
 renderProducts();
 
 
-let shoppingcart = [];
+let shoppingcart = JSON.parse(localStorage.getItem("Shoppingcart"));
+updateCart();
 
 
 // In Warenkorb einfügen
@@ -52,6 +52,10 @@ function addToCart(id){
 
 function updateCart(){
     renderCart();
+
+    //Warenkorb in local storage speichern
+    localStorage.setItem("Shoppingcart",JSON.stringify(shoppingcart));
+    
 }
 
 // Produkte rendern
