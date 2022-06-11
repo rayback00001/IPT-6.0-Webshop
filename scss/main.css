@@ -301,9 +301,9 @@ ul {
   font-size: 14px;
   color: white;
   padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
+  border-radius: 20px;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 /*Shoppingcart*/
@@ -372,9 +372,33 @@ ul {
 
 .btn-minus,
 .btn-plus {
-  border: 2px solid #2ecc71;
-  padding: 5px;
+  cursor: pointer;
+  border: 2px solid red;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background-color: yellow;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fa-solid {
+  cursor: pointer;
+}
+
+.total {
+  background-color: #1986d2;
+  font-size: 14px;
+  color: white;
+  height: 20px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

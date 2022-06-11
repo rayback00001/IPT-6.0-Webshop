@@ -17,7 +17,7 @@ function renderProducts(){
           <p><b>Preis:</b><span>${product.price}</span></p>
          </div>
           <div class="button-show" onclick="addToCart(${product.id})">
-          <a href="#" class = "i-d-w">In den Warenkorb</a>
+          <div class = "i-d-w">In den Warenkorb</a>
         </div>
         </div>
 
@@ -54,7 +54,7 @@ function updateCart(){
     renderCart();
 }
 
-
+// Produkte rendern
 function renderCart(){
     cartelement.innerHTML = "";
     shoppingcart.forEach((article) => {
@@ -65,12 +65,12 @@ function renderCart(){
             <td>${article.name}</td>
             <td>${article.price}</td>
             <td><div class ="units">
-            <div class = "btn-minus">-</div>
-            <div class = "number"></div>
-            <div class = "btn-plus">+</div>
+            <div class = "btn-minus" onclick="changeNumberOfUnits('minus', ${article.id})">-</div>
+            <div class = "number">${article.numberOfUnits}</div>
+            <div class = "btn-plus" onclick="changeNumberOfUnits('plus', ${article.id})">+</div>
             </div></td>
             <td></td>
-            <td><a href="#"><i class="fa-solid fa-xmark"></i></a></td>
+            <td><i class="fa-solid fa-xmark" onclick="removeItem(${article.id})"></i></td>
             </tr>    
         `;
     });
@@ -78,4 +78,32 @@ function renderCart(){
 
 
 
+// Anzahl Menge ändern
+function changeNumberOfUnits(operation, id){
+    shoppingcart = shoppingcart.map((article) => {
+
+        let oldNumberOfUnits = article.numberOfUnits; 
+
+        if(article.id === id){
+            if(operation === "minus" && oldNumberOfUnits > 1){
+                oldNumberOfUnits--;
+            }else if(operation === "plus"){
+                oldNumberOfUnits++;
+            }
+
+        }
+        return{
+            ...article,
+            numberOfUnits: oldNumberOfUnits,
+        }
+    });
+
+    updateCart();
+}
+
+//Ware löschen
+function removeItem(id){
+    shoppingcart = shoppingcart.filter((article) => article.id !== id);
+    updateCart();
+}
 
