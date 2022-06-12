@@ -26,7 +26,7 @@ function renderProducts(){
 renderProducts();
 
 
-let shoppingcart = JSON.parse(localStorage.getItem("Shoppingcart"));
+let shoppingcart = JSON.parse(localStorage.getItem("Shoppingcart")) || [];
 updateCart();
 
 
