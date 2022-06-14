@@ -220,9 +220,6 @@ footer .copyright{
 }
 
 
-
-
-
 /*Produkte*/
 
 .products{
@@ -389,5 +386,20 @@ footer .copyright{
     border-radius: 20px;
     letter-spacing: 1px;
     cursor: pointer;
+}
+
+/*About Us*/
+.about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us .top{
+   display: flex;
+   display: inline;
+   justify-content: center; 
+   align-items: center;
+
 }
 
