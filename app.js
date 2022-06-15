@@ -67,13 +67,13 @@ function renderCart(){
             <tr>
             <td><img src = "${article.imgsrc}"></td>
             <td>${article.name}</td>
-            <td>${article.price}</td>
             <td><div class ="units">
             <div class = "btn-minus" onclick="changeNumberOfUnits('minus', ${article.id})">-</div>
             <div class = "number">${article.numberOfUnits}</div>
             <div class = "btn-plus" onclick="changeNumberOfUnits('plus', ${article.id})">+</div>
             </div></td>
-            <td></td>
+            <td>${article.price}</td>
+            <td>${article.numberOfUnits * article.price}</td>
             <td><i class="fa-solid fa-xmark" onclick="removeItem(${article.id})"></i></td>
             </tr>    
         `;
@@ -104,6 +104,9 @@ function changeNumberOfUnits(operation, id){
 
     updateCart();
 }
+
+
+
 
 //Ware löschen
 function removeItem(id){
