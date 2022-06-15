@@ -396,10 +396,11 @@ footer .copyright{
 }
 
 .about-us .top{
-   display: flex;
-   display: inline;
-   justify-content: center; 
-   align-items: center;
+    width: 1000px;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
 
 }
 

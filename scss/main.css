@@ -435,15 +435,10 @@ footer .copyright {
 }
 
 .about-us .top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: inline;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 1000px;
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
 }
 /*# sourceMappingURL=main.css.map */
