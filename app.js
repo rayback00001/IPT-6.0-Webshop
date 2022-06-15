@@ -35,7 +35,7 @@ function addToCart(id){
 
     //Überprüfen ob ein Produkt schon existiert
     if(shoppingcart.some((article) => article.id === id)){
-        alert("Produkt ist schon im Warenkorb!")
+        changeNumberOfUnits("plus", id)
     }
     else{
         const article = products.find((product) => product.id === id);
