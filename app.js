@@ -72,8 +72,8 @@ function renderCart(){
             <div class = "number">${article.numberOfUnits}</div>
             <div class = "btn-plus" onclick="changeNumberOfUnits('plus', ${article.id})">+</div>
             </div></td>
-            <td>${article.price}</td>
-            <td>${article.numberOfUnits * article.price}</td>
+            <td>CHF ${article.price}</td>
+            <td>CHF ${article.numberOfUnits * article.price}</td>
             <td><i class="fa-solid fa-xmark" onclick="removeItem(${article.id})"></i></td>
             </tr>    
         `;
