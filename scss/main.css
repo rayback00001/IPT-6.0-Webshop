@@ -213,6 +213,10 @@ footer a {
   margin-bottom: 10px;
 }
 
+footer a:hover {
+  text-decoration: underline;
+}
+
 footer .follow {
   margin-top: 20px;
 }
@@ -325,7 +329,7 @@ footer .copyright {
   cursor: pointer;
 }
 
-/*Shoppingcart*/
+/*Warenkorb*/
 .cart-section table {
   width: 100%;
   border-collapse: collapse;
