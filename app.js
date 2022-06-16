@@ -68,7 +68,7 @@ function renderSubTotal(){
         subtotal += article.price * article.numberOfUnits;
     })
 
-    subtotalelement.innerHTML = `<td> Zischensumme: ${subtotal}</td>`;
+    subtotalelement.innerHTML = `<td> Zwischensumme: ${subtotal}</td>`;
 }
 
 // Warenkorb rendern
