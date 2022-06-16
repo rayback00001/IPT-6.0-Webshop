@@ -2,6 +2,7 @@
 const productelement = document.querySelector(".products");
 const cartelement = document.querySelector(".cart-item");
 
+//Produkte rendern
 function renderProducts(){
     products.forEach((product) => {
         productelement.innerHTML += `    
@@ -58,7 +59,7 @@ function updateCart(){
     
 }
 
-// Produkte rendern
+// Warenkorb rendern
 function renderCart(){
     cartelement.innerHTML = "";
     shoppingcart.forEach((article) => {
