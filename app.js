@@ -31,7 +31,7 @@ let shoppingcart = JSON.parse(localStorage.getItem("Shoppingcart")) || [];
 updateCart();
 
 
-// In Warenkorb einfügen
+// In den Warenkorb einfügen
 function addToCart(id){
 
     //Überprüfen ob ein Produkt schon existiert
@@ -83,7 +83,7 @@ function renderCart(){
 
 
 
-// Anzahl Menge ändern
+// Menge ändern
 function changeNumberOfUnits(operation, id){
     shoppingcart = shoppingcart.map((article) => {
 
@@ -114,4 +114,7 @@ function removeItem(id){
     shoppingcart = shoppingcart.filter((article) => article.id !== id);
     updateCart();
 }
+
+
+
 
