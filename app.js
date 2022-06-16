@@ -1,6 +1,7 @@
 //Elemente auswählen
 const productelement = document.querySelector(".products");
 const cartelement = document.querySelector(".cart-item");
+const subtotalelement = document.querySelector(".subtotal");
 
 //Produkte rendern
 function renderProducts(){
@@ -53,10 +54,21 @@ function addToCart(id){
 
 function updateCart(){
     renderCart();
-
+    renderSubTotal();
     //Warenkorb in local storage speichern
     localStorage.setItem("Shoppingcart",JSON.stringify(shoppingcart));
     
+}
+
+//Zwischensumme berechnen
+function renderSubTotal(){
+    let subtotal = 0;
+
+    shoppingcart.forEach((article) => {
+        subtotal += article.price * article.numberOfUnits;
+    })
+
+    subtotalelement.innerHTML = `<td>${totalprice}</td>`;
 }
 
 // Warenkorb rendern
@@ -82,7 +94,6 @@ function renderCart(){
 }
 
 
-
 // Menge ändern
 function changeNumberOfUnits(operation, id){
     shoppingcart = shoppingcart.map((article) => {
@@ -105,8 +116,6 @@ function changeNumberOfUnits(operation, id){
 
     updateCart();
 }
-
-
 
 
 //Ware löschen
