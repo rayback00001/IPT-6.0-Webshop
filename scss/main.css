@@ -331,12 +331,9 @@ footer .copyright {
   cursor: pointer;
 }
 
-.total {
+.subtotal {
   background-color: #1986d2;
-  font-size: 14px;
-  color: white;
-  height: 20px;
-  border-radius: 20px;
-  letter-spacing: 1px;
-  cursor: pointer;
+  color: black;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

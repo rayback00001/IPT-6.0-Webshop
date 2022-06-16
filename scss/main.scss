@@ -359,13 +359,10 @@ footer .copyright{
     cursor: pointer;
 }
 
-.total{
-    background-color: #1986d2;
-    font-size: 14px;
-    color: white;
-    height: 20px;
-    border-radius: 20px;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
 
+.subtotal{
+    background-color: #1986d2;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
