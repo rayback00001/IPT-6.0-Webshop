@@ -68,7 +68,7 @@ function renderSubTotal(){
         subtotal += article.price * article.numberOfUnits;
     })
 
-    subtotalelement.innerHTML = `<td>${totalprice}</td>`;
+    subtotalelement.innerHTML = `<td>${subtotal}</td>`;
 }
 
 // Warenkorb rendern
