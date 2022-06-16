@@ -13,7 +13,7 @@ function renderProducts(){
          </div>
          <div class="description">
           <h1>${product.name}</h1>
-          <p><b>Preis:</b><span>${product.price}</span></p>
+          <p><b>Preis: CHF</b><span>${product.price}</span></p>
          </div>
           <div class="button-show" onclick="addToCart(${product.id})">
           <div class="i-d-w">In den Warenkorb</a>
