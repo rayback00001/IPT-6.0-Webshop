@@ -8,3 +8,8 @@
 # Footer
 
 ![Footer](https://user-images.githubusercontent.com/83508762/189669975-1e9f2a58-b456-492f-9aa1-4b047951154f.jpg)
+
+
+# Shopping Cart
+![Warenkorb](https://user-images.githubusercontent.com/83508762/189671125-de8c52ef-4851-4e80-ac16-5927e58e5785.jpg)
+
